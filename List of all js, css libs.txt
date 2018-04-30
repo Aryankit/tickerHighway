@@ -1,0 +1,14 @@
+List of all js, css libs that i am gonna use in this project
+
+================
+JS
+================
+1. multiple.js  :: https://multiple.js.org/
+2. fullpage.js  :: https://alvarotrigo.com/fullPage/#page1
+3. typit.js     :: https://github.com/alexmacarthur/typeit
+
+
+================
+CSS
+================
+1. skeleton.css :: http://getskeleton.com/
