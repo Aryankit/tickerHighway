@@ -1,0 +1,60 @@
+.section{
+    font-size: 6em;
+    text-align: center;
+}
+
+.section .slide {
+	font-size: 3em;
+    text-align: center;
+}
+
+/*cloud image continious loop*/
+.tech-slideshow {
+  height: 360px;
+  max-width: relative;
+  margin: 0 auto;
+  margin-bottom: -19rem;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.tech-slideshow > div {
+  height: 500px;
+  width: 2526px;
+  background: url(cloud.png);
+  position: absolute;
+  top: relative;
+  left: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+}
+.tech-slideshow .mover-1 {
+  animation: moveSlideshow 300s linear infinite;
+}
+.tech-slideshow .mover-2 {
+  opacity: -1;
+  transition: opacity 0.5s ease-out;
+  background-position: 0 -100px;
+  animation: moveSlideshow 100s linear infinite;
+}
+
+
+@keyframes moveSlideshow {
+  100% { 
+    transform: translateX(-66.6666%);  
+  }
+}
+
+.backimg{ 
+    /* The image used */
+    background-image: url("highway.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

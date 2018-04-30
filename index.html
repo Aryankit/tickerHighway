@@ -3,6 +3,7 @@
 <head>
 	<title>Ticker Highway</title>
 	<link rel="stylesheet" type="text/css" href="JS/fullpage/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
 
 	<script src="JS/jquery.min.js"></script>
 
@@ -16,9 +17,19 @@
 	<script type="text/javascript" src="JS/fullpage/jquery.fullPage.js"></script>
 	<!--Initialization for fullpage.js-->
 	<script type="text/javascript">
+    
     $(document).ready(function() {
-        $('#fullpage').fullpage();
+        $('#fullpage').fullpage(
+        	{
+                sectionsColor: ['#3b3b3b', '#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke'],
+            }
+
+
+        	);
+
     });
+
+
 	</script>
 
 
@@ -26,17 +37,39 @@
 </head>
 <body>
 	<div id="fullpage">
-		<div class="section">Some section</div>
-			<div class="section">Some section
+		<div class="section backimg">
 
+			<div class="tech-slideshow">
+  				<div class="mover-1"></div>
+  				<div class="mover-2"></div>
+			</div>
+
+		</div>
+			
 			<div class="section">
 		        <div class="slide">Section 2 Slide 1</div>
 		        <div class="slide">Section 2 Slide 2</div>
 		        <div class="slide">Section 2 Slide 3</div>
    			</div>
 
+		
+		<div class="section">Some section
+
+
+
+
+
 		</div>
-		<div class="section">Some section</div>
+
+		<div class="section">
+
+			<div class="item">Content</div>
+			<div class="item">Content</div>
+			<div class="item">Content</div>
+
+
+		</div>
+
 	</div>
 
 </body>
