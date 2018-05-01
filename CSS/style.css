@@ -1,19 +1,19 @@
-.section{
-    font-size: 6em;
-    text-align: center;
+/*font import*/
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body{
+  margin: 0;
+  padding: 0;
 }
 
-.section .slide {
-	font-size: 3em;
-    text-align: center;
-}
+
 
 /*cloud image continious loop*/
 .tech-slideshow {
   height: 360px;
   max-width: relative;
   margin: 0 auto;
-  margin-bottom: -19rem;
+  margin-bottom: -28rem;
   position: relative;
   overflow: hidden;
   transform: translate3d(0, 0, 0);
@@ -30,11 +30,11 @@
   transform: translate3d(0, 0, 0);
 }
 .tech-slideshow .mover-1 {
-  animation: moveSlideshow 300s linear infinite;
+  animation: moveSlideshow 90s linear infinite;
 }
 .tech-slideshow .mover-2 {
   opacity: -1;
-  transition: opacity 0.5s ease-out;
+  transitionnsition: opacity 0.5s ease-out;
   background-position: 0 -100px;
   animation: moveSlideshow 100s linear infinite;
 }
@@ -46,102 +46,119 @@
   }
 }
 
-.backimg{ 
-    /* The image used */
-    background-image: url("highway.jpg");
-
-    /* Full height */
-    height: 100%; 
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 
 
-/*multiplejs code here*/
-.container{
-	margin-left: 20%;
-	margin-right: 20%;
-}
-.content{
-	display: flex;
-}
-.content1, .content4, .content7, .content10{
-	border: 1px solid #404040;
-	height: 200px;
-	flex: 4;
-	margin: 5px;
 
 
-}
-.content2, .content3, .content5, .content12{
-	border: 1px solid #404040;
-	height: 200px;
-	flex: 3;
-	margin: 5px;
-}
 
-.content6, .content8, .content9, .content11{
-	border: 1px solid #404040;
-	height: 200px;
-	flex: 2;
-	margin: 5px;
-}
+                                                    .backimg{ 
+                                                        /* The image used */
+                                                        background-image: url("bird-s-eye-view-boats-bridge-1039302.jpg");
+
+                                                        /* Full height */
+                                                        height: 100%; 
+
+                                                        /* Center and scale the image nicely */
+                                                        background-position: center;
+                                                        background-repeat: no-repeat;
+                                                        background-size: cover;
+                                                    }
 
 
-/*typedjs CSS*/
-.bigautotype{
-  font-family: sans-serif;
-  font-size: 7rem;
+
+
+
+
+#impression h1{
+  margin-top: -80px;
+  font-family: 'Lato';
+  font-size: 8rem;
   color: white;
+  text-align: center;
+  color: #fcfcfc;
+  }
+
+#impression p{
+  font-family: 'Lato';
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  color: #fcfcfc;
+
 }
-.typedcontainer{
-  margin-left: -10px;
+
+
+
+ /*fp-control arrow*/
+ .fp-controlArrow{
+ border-color: #ff000000 #343a4038 !important;
 }
+
+
+
+
+/*SECTOIN 1 2 & 3*/
+
+
+/*section two stuff here*/
+.section2{
+  background-color: #FAFAFA;
+  text-align: center;
+}
+.sec2p{
+  margin-right: 20px;
+  font-size: 18px;
+  margin-top: -130px;
+  padding-right: 100px;
 }
 
-#typed-string{
-margin-left: -10px;
- }
-
- /*slide p tag sizing etc*/
- .slide p {
-  padding: 50px;
-  font-size: 40px;
-  font-family: sans-serif;
-
- }
- .slide1{
-  background-color: #0798ec;
- }
- .slide2{
-  background-color: #fc6c7c;
- }
- .slide3{
-  background-color: #fec401;
- }
- .slide3 p{
-  color: #424141;
-  font-size: 35px;
-  border: 1px bold black;
-  margin: 10px;
-  padding: 10px;
-
- }
- .slide3 .moreabt{
-  font-size: 50px;
-  color: black;
-
- }
- .innerspace{
-  margin: 100px;
- }
 
 
- /*section2*/
- .section2{
-  background-color:#ff5f45;
- }
+/*section 2 stuff ends here*/
+
+
+
+/*section three stuff here*/
+.section3{
+  background-color: #EDEDED;
+
+}
+
+.sec3h{
+  margin-top: -150px;
+  padding-bottom: 10px;
+
+}
+
+.sec3p p{
+  font-size: 18px;
+  padding-bottom: 50px;
+  padding-right: 100px;
+
+}
+
+.sec3p ul li{
+  font-size: 15px;
+
+}
+/*sec three stuff ends*/
+
+
+
+/*formcontainer*/
+.formcontainer{
+  padding: 50px
+}
+
+
+
+
+
+
+/*section 5*/
+
+.section5{
+  background-color: #3B3B3B;
+  height: 100px;
+}
