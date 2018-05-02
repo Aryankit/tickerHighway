@@ -10,13 +10,19 @@ body{
 
 /*cloud image continious loop*/
 .tech-slideshow {
-  height: 360px;
+  height: 500px;
   max-width: relative;
   margin: 0 auto;
-  margin-bottom: -28rem;
-  position: relative;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 300px;
+  width: 100%;
+  overflow:hidden;
+
   overflow: hidden;
   transform: translate3d(0, 0, 0);
+  
 }
 
 .tech-slideshow > div {
@@ -52,18 +58,19 @@ body{
 
 
 
-                                                    .backimg{ 
-                                                        /* The image used */
-                                                        background-image: url("bird-s-eye-view-boats-bridge-1039302.jpg");
+              .backimg{ 
+                  /* The image used */
+                  background-image: url("bird-s-eye-view-boats-bridge-1039302.jpg");
 
-                                                        /* Full height */
-                                                        height: 100%; 
+                  /* Full height */
+                  height: 100%; 
 
-                                                        /* Center and scale the image nicely */
-                                                        background-position: center;
-                                                        background-repeat: no-repeat;
-                                                        background-size: cover;
-                                                    }
+                  /* Center and scale the image nicely */
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+
+              }
 
 
 
@@ -71,9 +78,8 @@ body{
 
 
 #impression h1{
-  margin-top: -80px;
   font-family: 'Lato';
-  font-size: 8rem;
+  font-size: 5rem;
   color: white;
   text-align: center;
   color: #fcfcfc;
@@ -85,6 +91,9 @@ body{
   color: white;
   text-align: center;
   color: #fcfcfc;
+  font-weight: 5rem;
+  margin-right: 20px;
+  margin-right: 20px;
 
 }
 
@@ -102,10 +111,7 @@ body{
 
 
 /*section two stuff here*/
-.section2{
-  background-color: #FAFAFA;
-  text-align: center;
-}
+
 .sec2p{
   margin-right: 20px;
   font-size: 18px;
@@ -117,34 +123,78 @@ body{
 
 /*section 2 stuff ends here*/
 
-
+.section2{
+    z-index: -100;
+}
 
 /*section three stuff here*/
 .section3{
   background-color: #EDEDED;
 
 }
-
-.sec3h{
-  margin-top: -150px;
-  padding-bottom: 10px;
-
+.sectioncontainer{
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: "Lato";
 }
+
+
 
 .sec3p p{
   font-size: 18px;
   padding-bottom: 50px;
   padding-right: 100px;
+  
 
 }
 
 .sec3p ul li{
   font-size: 15px;
+  font
+  text-decoration: none;
 
 }
 /*sec three stuff ends*/
 
 
+/*video*/
+  #myVideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top:0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-color: black; /* in case the video doesn't fit the whole page*/
+      background-image: /* our video */;
+      background-position: center center;
+      background-size: contain;
+      object-fit: cover; /*cover video background */
+      z-index:1;
+  }
+
+
+  .section2 .layer{
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    left: 0;
+    top: 43%;
+
+    /* 
+    * Preventing flicker on some browsers 
+    * See http://stackoverflow.com/a/36671466/1081396  or issue #183
+    */
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+
+video::-webkit-media-controls {
+    display:none !important;
+  }
 
 /*formcontainer*/
 .formcontainer{
