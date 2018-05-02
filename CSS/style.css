@@ -125,23 +125,67 @@ body{
 
 .section2{
     z-index: -100;
+    font-family: "Lato";
+
 }
+
+
+.videolayer{
+    background-color: #fcfcfcd6;
+     margin-top: -180px;
+}
+.videolayer h1{
+  font-size: 2em;
+  padding: 20px;
+  padding-left: 250px;
+  margin-right: 150px;
+ 
+}
+
+.videolayer p{
+  padding: 20px;
+  margin-top: 25px;
+  padding-left: 250px;
+  margin-right: 150px;
+  font-size: 25px;
+
+}
+
+
+
+  .section .videolayer{
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    left: 0;
+    top: 43%;
+    /* 
+    * Preventing flicker on some browsers 
+    * See http://stackoverflow.com/a/36671466/1081396  or issue #183
+    */
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
 
 /*section three stuff here*/
 .section3{
   background-color: #EDEDED;
 
 }
+
+
 .sectioncontainer{
   max-width: 800px;
   margin: 0 auto;
   font-family: "Lato";
+
 }
 
 
 
 .sec3p p{
-  font-size: 18px;
+  font-size: 25px;
   padding-bottom: 50px;
   padding-right: 100px;
   
@@ -149,7 +193,7 @@ body{
 }
 
 .sec3p ul li{
-  font-size: 15px;
+  font-size: 20px;
   font
   text-decoration: none;
 
