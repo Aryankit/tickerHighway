@@ -1,6 +1,7 @@
 /*font import*/
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
+
 body{
   margin: 0;
   padding: 0;
@@ -54,23 +55,19 @@ body{
 
 
 
+.backimg{ 
+  /* The image used */
+  background-image: url("bird-s-eye-view-boats-bridge-1039302.jpg");
 
+  /* Full height */
+  height: 100%; 
 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-
-              .backimg{ 
-                  /* The image used */
-                  background-image: url("bird-s-eye-view-boats-bridge-1039302.jpg");
-
-                  /* Full height */
-                  height: 100%; 
-
-                  /* Center and scale the image nicely */
-                  background-position: center;
-                  background-repeat: no-repeat;
-                  background-size: cover;
-
-              }
+}
 
 
 
@@ -78,22 +75,25 @@ body{
 
 
 #impression h1{
-  font-family: 'Lato';
+  letter-spacing: 5px;
+  font-weight: lighter;
+  font-family: 'Lato', sans-serif;
   font-size: 5rem;
   color: white;
   text-align: center;
   color: #fcfcfc;
+
   }
 
 #impression p{
-  font-family: 'Lato';
+  font-weight: lighter;
+  font-family: 'Lato', sans-serif;
   font-size: 2rem;
   color: white;
   text-align: center;
   color: #fcfcfc;
-  font-weight: 5rem;
-  margin-right: 20px;
-  margin-right: 20px;
+  margin-right: 70px;
+  margin-left: 70px;
 
 }
 
@@ -125,7 +125,7 @@ body{
 
 .section2{
     z-index: -100;
-    font-family: "Lato";
+    font-family: "Lato", sans-serif;
 
 }
 
@@ -135,6 +135,8 @@ body{
      margin-top: -180px;
 }
 .videolayer h1{
+  color: #585252;
+  letter-spacing: 2px;
   font-size: 2em;
   padding: 20px;
   padding-left: 250px;
@@ -143,6 +145,7 @@ body{
 }
 
 .videolayer p{
+  color: #343a40f7;
   padding: 20px;
   margin-top: 25px;
   padding-left: 250px;
@@ -178,21 +181,30 @@ body{
 .sectioncontainer{
   max-width: 800px;
   margin: 0 auto;
-  font-family: "Lato";
+  font-weight: lighter;
+  font-family: 'Lato', sans-serif;
 
 }
+#tickermore{
+  letter-spacing: 3px;
+  font-stretch: 5px;
+}
 
+.sec3h h1{
+  color: #585252;
+}
 
 
 .sec3p p{
+  color: #343a40f7;
   font-size: 25px;
   padding-bottom: 50px;
   padding-right: 100px;
-  
-
+ 
 }
 
 .sec3p ul li{
+  color: #343a40f7;
   font-size: 20px;
   font
   text-decoration: none;
@@ -212,11 +224,11 @@ body{
     height: 100%;
     background-size: 100% 100%;
     background-color: black; /* in case the video doesn't fit the whole page*/
-      background-image: /* our video */;
-      background-position: center center;
-      background-size: contain;
-      object-fit: cover; /*cover video background */
-      z-index:1;
+    background-image: /* our video */;
+    background-position: center center;
+    background-size: contain;
+    object-fit: cover; /*cover video background */
+    z-index:1;
   }
 
 
@@ -246,13 +258,80 @@ video::-webkit-media-controls {
 }
 
 
-
-
-
-
 /*section 5*/
 
 .section5{
   background-color: #3B3B3B;
   height: 100px;
+}
+
+
+
+
+/*form css here*/
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: #e2dedb;
+  
+}
+
+header {
+  position: relative;
+  margin: 100px 0 25px 0;
+  font-size: 2.3em;
+  text-align: center;
+  letter-spacing: 7px;
+}
+
+#form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+}
+
+input {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  width: 470px;
+  height: 60px;
+  padding: 0px 15px 0px 15px;
+  
+  background: transparent;
+  outline: none;
+  color: #726659;
+  
+  border: solid 2px #b3aca7;
+  
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+#submit {
+  width: 502px;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  color: #b3aca7;
+  
+  outline:none;
+  cursor: pointer;
+  
+
+ 
+}
+
+#submit:hover {
+  color: #e2dedb;
 }
